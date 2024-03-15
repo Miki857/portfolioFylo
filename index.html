@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">  
+
+    <title>Fylo</title>
+    </style>
+  </head>
+  <body class="body">
+    <!-- HEADER -->
+    <header class="header flex align-center">
+      <div class="header__container">
+        <div class="header-logo">
+          <img src="assets/images/logo.svg" alt="" class="logo">
+        </div>
+        <div class="container flex menu__container">
+          <a href="#features" class="menu-link" >Features</a>        
+          <a href="#team" class="menu-link">Team</a>        
+          <a class="menu-link" onclick="showSignIn();">Sign In</a>        
+        </div>
+      </div>
+    </header>
+
+    <!-- SIGN IN -->
+    <div class="signIn__container flex align-center justify-center" >
+      <form action="POST" class="flex flex-column align-center signIn__container__signIn">
+        <h2 class="centerText">SIGN IN</h2>
+        <input type="email" id="inputEmail" class="input" placeholder="Email" name="email" required>
+        <input type="password" id="inputPass" class="input" placeholder="Password" name="pasword" required>
+        
+        <input type="hidden" name="_captcha" value="false">
+  
+        <button type="submit" class="btn__submit button" onclick="alert('Pagina en Construcción');">Send</button>
+        <a href="">Forgot email or password?</a>
+      </form>
+    </div>
+
+    <!-- MAIN -->
+    <main class="main flex flex-column align-center justify-center">
+      <!-- Section 1 -->
+      <section class="section1 flex flex-column align-center justify-center">
+        <img src="assets/images/illustration-intro.png" alt="" class="max-width-100">
+        
+        <h2 class="text-bold text-center">
+          All your files in one secure location, accessible anywhere.
+        </h2>
+  
+        <p class="text-medium text-center">
+          Fylo stores all your most important files in one secure location. Access them wherever 
+          you need, share and collaborate with friends family, and co-workers.
+        </p>
+    
+        <button type="button" class="button">
+          <h2 class="text-bold">Get Started</h2>
+        </button>
+      </section>
+      <!-- Section 2 -->
+      <section class="section2 flex flex-column align-center justify-center" id="features">
+        <div class="container flex flex-column align-center justify-center">
+          <img src="assets/images/icon-access-anywhere.svg" alt="" class="max-width-100">
+          <h2 class="text-bold text-center">Access your files, anywhere</h2>
+          <p class="text-medium text-center">
+            The ability to use a smartphone, tablet, or computer to access your account means your 
+            files follow you everywhere.  </p>  
+        </div>
+        
+        <div class="container flex flex-column align-center justify-center">
+          <img src="assets/images/icon-security.svg" alt="" class="icon">
+          <h2 class="text-bold text-center">Security you can trust</h2>
+          <p class="text-medium text-center">
+            2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.
+          </p>  
+        </div>
+        
+        <div class="container flex flex-column align-center justify-center">
+          <img src="assets/images/icon-collaboration.svg" alt="" class="icon">
+          <h2 class="text-bold text-center">Real-time collaboration</h2>
+          <p class="text-medium text-center">
+            Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
+          </p>  
+        </div>
+        
+        <div class="container flex flex-column align-center justify-center">
+          <img src="assets/images/icon-collaboration.svg" alt="" class="icon">
+          <h2 class="text-bold text-center">Store any type of file</h2>
+          <p class="text-medium text-center">
+            Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+            file types to be securely stored and shared.
+          </p>  
+        </div>
+      </section>
+      <!-- Section 6 -->
+      <section class="section6 flex flex-column align-center justify-center"> 
+        <img src="assets/images/illustration-stay-productive.png" alt="" class="illustration-stay-productive max-width-100">       
+        <div class="container flex flex-column align-center justify-center">
+          <h2 class="text-bold text-center">Stay productive, wherever you are</h2>
+          <p class="text-medium">
+            Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+            storage needs.
+            <br><br>
+            Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+            attachments required.
+            <br><br>
+            <a href="" class="anchor flex align-center">
+              See how Fylo works
+              <i class='bx bxs-right-arrow-circle'></i></a>
+          </p>  
+        </div>
+      </section>
+      <!-- Section 3 -->
+      <section class="section3 flex flex-column align-center justify-center" id="team">
+        <img src="assets/images/bg-quotes.png" alt="" class="img__quotes max-width-100">
+        
+        <div class="flex flex-column container-70 testimonial__container">
+          <h5>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</h5>
+            <div class="flex align-center testimonial__container__user">
+              <img src="assets/images/profile-1.jpg" alt="" class="img">
+              <div class="testimonial__user flex flex-column testimonial__container__user__data">
+                <h2>
+                  Satish Patel
+                </h2>
+                <h3>
+                  Founder & CEO, Huddle
+                </h3>
+              </div>  
+            </div>
+        </div>
+
+        <div class="flex flex-column container-70 testimonial__container">
+          <h5>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</h5>
+            <div class="flex align-center testimonial__container__user">
+              <img src="assets/images/profile-2.jpg" alt="" class="img">
+              <div class="testimonial__user flex flex-column testimonial__container__user__data">
+                <h2>
+                  Bruce McKenzie
+                </h2>
+                <h3>
+                  Founder & CEO, Huddle
+                </h3>
+              </div>  
+            </div>
+        </div>
+        
+        <div class="flex flex-column container-70 testimonial__container">
+          <h5>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+            become a well-oiled collaboration machine.</h5>
+            <div class="flex align-center testimonial__container__user">
+              <img src="assets/images/profile-3.jpg" alt="" class="img">
+              <div class="testimonial__user flex flex-column testimonial__container__user__data">
+                <h2>
+                  Iva Boyd
+                </h2>
+                <h3>
+                  Founder & CEO, Huddle
+                </h3>
+              </div>  
+            </div>
+        </div>
+      </section>
+      <!-- Section 4 -->
+      <section class="section4 flex flex-column align-center justify-center">
+        <div class="container__getStarted flex flex-column align-center justify-center">
+          <h2>Get early access today</h2>
+          <p class="text-center">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+            questions, our support team would be happy to help you.</p>
+          <div class="input__button flex flex-column justify-center width-100">
+            <input type="email" name="" id="" placeholder="email@example.com" class="input">    
+            <button type="button" class="button">
+              <h2 class="text-bold">Get Started for Free</h2>
+            </button>
+          </div>
+        </div>
+      </section>      
+      <!-- Section 5 Footer -->
+      <section class="section5 flex flex-column justify-center">  
+        <img src="assets/images/logo.svg" alt="" class="logo">       
+        <div class="info__container flex flex-column">
+          <ul>
+            <li>
+              <i class='bx bx-map'></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                dolore magna aliqua</p>
+            </li>
+            <li>
+              <i class='bx bx-phone' ></i>
+              <p>+1-543-123-4567</p>
+            </li>
+            <li>
+              <i class='bx bx-envelope'></i>
+              <p>example@fylo.com</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Jobs</a>
+            </li>
+            <li>
+              <a href="#">Press</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Terms</a>
+            </li>
+            <li>
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <i class='bx bxl-facebook-circle' ></i>
+            </li>
+            <li>
+              <i class='bx bxl-twitter' ></i>
+            </li>
+            <li>
+              <i class='bx bxl-instagram-alt' ></i>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <p class="flex justify-center" style="color: white;">
+        Coded by-<a href="#" style="color: white;">Miguel Alejandro Castillo Vargas</a>.
+      </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/signIn.js" async></script>
+
+  </body>
+</html>
